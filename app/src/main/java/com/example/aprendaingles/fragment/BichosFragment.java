@@ -84,4 +84,13 @@ public class BichosFragment extends Fragment implements View.OnClickListener{
             mediaPlayer.setOnCompletionListener(mp -> mediaPlayer.release());
         }
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mediaPlayer != null){
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    }
 }
