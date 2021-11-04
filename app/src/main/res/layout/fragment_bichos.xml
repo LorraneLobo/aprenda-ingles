@@ -2,88 +2,100 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/numerosLayout"
+    android:id="@+id/bichosLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/segundo_fundo"
-    tools:context=".fragment.NumerosFragment">
+    android:background="#F5E9B9"
+    tools:context=".fragment.BichosFragment">
 
     <ImageButton
-        android:id="@+id/btnUm"
+        android:id="@+id/btnCao"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/um"
-        app:layout_constraintBottom_toTopOf="@+id/btnTres"
-        app:layout_constraintEnd_toStartOf="@+id/btnDois"
+        android:src="@drawable/cao"
+        app:layout_constraintBottom_toTopOf="@+id/btnLeao"
+        app:layout_constraintEnd_toStartOf="@+id/btnGato"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <ImageButton
-        android:id="@+id/btnDois"
+        android:id="@+id/btnGato"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/dois"
-        app:layout_constraintBottom_toTopOf="@+id/btnQuatro"
+        android:src="@drawable/gato"
+        app:layout_constraintBottom_toTopOf="@+id/btnMacaco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnUm"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/btnCao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <ImageButton
-        android:id="@+id/btnTres"
+        android:id="@+id/btnLeao"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/tres"
-        app:layout_constraintBottom_toTopOf="@+id/btnCinco"
-        app:layout_constraintEnd_toStartOf="@+id/btnQuatro"
+        android:src="@drawable/leao"
+        app:layout_constraintBottom_toTopOf="@+id/btnOvelha"
+        app:layout_constraintEnd_toStartOf="@+id/btnMacaco"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnUm" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCao" />
 
     <ImageButton
-        android:id="@+id/btnQuatro"
+        android:id="@+id/btnMacaco"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/quatro"
-        app:layout_constraintBottom_toTopOf="@+id/btnSeis"
+        android:src="@drawable/macaco"
+        app:layout_constraintBottom_toTopOf="@+id/btnVaca"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnTres"
-        app:layout_constraintTop_toBottomOf="@+id/btnDois" />
+        app:layout_constraintStart_toEndOf="@+id/btnLeao"
+        app:layout_constraintTop_toBottomOf="@+id/btnGato" />
 
     <ImageButton
-        android:id="@+id/btnCinco"
+        android:id="@+id/btnOvelha"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/cinco"
+        android:src="@drawable/ovelha"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSeis"
+        app:layout_constraintEnd_toStartOf="@+id/btnVaca"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTres" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLeao" />
 
     <ImageButton
-        android:id="@+id/btnSeis"
+        android:id="@+id/btnVaca"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/segundo_fundo"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/seis"
+        android:src="@drawable/vaca"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnCinco"
-        app:layout_constraintTop_toBottomOf="@+id/btnQuatro" />
+        app:layout_constraintStart_toEndOf="@+id/btnOvelha"
+        app:layout_constraintTop_toBottomOf="@+id/btnMacaco" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/direitos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOvelha"
+        app:layout_constraintVertical_bias="0.84000003" />
 </androidx.constraintlayout.widget.ConstraintLayout>
